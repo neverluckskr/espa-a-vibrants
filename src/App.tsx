@@ -22,7 +22,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-      <div className="pointer-events-none fixed bottom-4 right-4 bg-background/80 backdrop-blur-sm border border-border/60 text-xs text-muted-foreground px-3 py-2 rounded-full shadow-soft">
+      <div className="hidden md:block pointer-events-none fixed bottom-4 right-4 bg-background/80 backdrop-blur-sm border border-border/60 text-xs text-muted-foreground px-3 py-2 rounded-full shadow-soft">
         © 2025, all rights reserved. Developed by IMPULSE
       </div>
     </TooltipProvider>
