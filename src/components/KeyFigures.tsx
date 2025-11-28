@@ -15,7 +15,6 @@ type Figure = {
   period: string;
   description: string;
   avatar?: string;
-  avatarClass?: string;
 };
 
 const figures: Figure[] = [
@@ -31,56 +30,49 @@ const figures: Figure[] = [
     role: "Диктатор",
     period: "1923-1930",
     description: "Військовий диктатор за підтримки монархії. Провів модернізацію, але не вирішив структурних проблем.",
-    avatar: migeliAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_38%] scale-95"
+    avatar: migeliAvatar
   },
   {
     name: "Нісето Алькала-Самора",
     role: "Перший президент республіки",
     period: "1931-1936",
     description: "Помірний республіканець, перший президент Другої республіки.",
-    avatar: nisetoAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_42%] scale-95"
+    avatar: nisetoAvatar
   },
   {
     name: "Мануель Асанья",
     role: "Президент республіки",
     period: "1936-1939",
     description: "Інтелектуал і письменник, президент під час Громадянської війни.",
-    avatar: manuelAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_40%] scale-95"
+    avatar: manuelAvatar
   },
   {
     name: "Франсіско Ларго Кабальєро",
     role: "Лідер соціалістів",
     period: "Прем'єр 1936-1937",
     description: "Лідер соціалістів, очолював республіканський уряд на початку війни.",
-    avatar: franciscoAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_40%] scale-95"
+    avatar: franciscoAvatar
   },
   {
     name: "Хуан Негрін",
     role: "Прем'єр-міністр",
     period: "1937-1939",
     description: "Останній прем'єр республіканського уряду, організував опір франкістам.",
-    avatar: juanAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_40%] scale-95"
+    avatar: juanAvatar
   },
   {
     name: "Франсіско Франко",
     role: "Генерал, каудильо",
     period: "1936-1975",
     description: "Лідер військового заколоту, переможець у війні. Диктатор Іспанії до 1975 року.",
-    avatar: francoAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_48%] scale-95"
+    avatar: francoAvatar
   },
   {
     name: "Долорес Ібаррурі",
     role: "Комуністична лідерка",
     period: "Активна 1930-ті",
     description: "\"Ла Пасіонарія\" - натхненний оратор республіканського руху. Відома гаслом \"¡No pasarán!\"",
-    avatar: doloresAvatar,
-    avatarClass: "w-full h-full object-cover object-[50%_42%] scale-95"
+    avatar: doloresAvatar
   }
 ];
 
@@ -114,16 +106,16 @@ const KeyFigures = () => {
             >
               <Card className="p-6 h-full hover:shadow-spanish transition-all duration-300 hover:-translate-y-2">
                 {figure.avatar ? (
-                  <div className="w-20 h-20 rounded-full overflow-hidden mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
                     <img
                       src={figure.avatar}
                       alt={figure.name}
-                      className={figure.avatarClass ?? "w-full h-full object-cover object-[50%_32%] scale-95"}
+                      className="w-full h-full object-cover object-center"
                       loading="lazy"
                     />
                   </div>
                 ) : (
-                  <div className="w-20 h-20 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mb-4 flex items-center justify-center shadow-spanish">
+                  <div className="w-24 h-24 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mb-4 flex items-center justify-center shadow-spanish">
                     <span className="text-3xl font-display font-bold text-white">
                       {figure.name.charAt(0)}
                     </span>

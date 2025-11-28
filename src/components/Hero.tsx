@@ -27,7 +27,25 @@ const Hero = () => {
             Епоха змін: від монархії до республіки, від надії до громадянської війни
           </p>
         </motion.div>
-        
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25, duration: 0.8 }}
+          className="mt-6"
+        >
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 bg-black/35 backdrop-blur-sm px-6 py-3 rounded-full text-sm text-white/85 shadow-spanish">
+            <span className="uppercase tracking-[0.08em] text-xs text-white/70">Зробили презентацію:</span>
+            <span className="font-semibold">Шегеда Влад</span>
+            <span className="text-white/50">•</span>
+            <span className="font-semibold">Швачко Вероніка</span>
+            <span className="text-white/50">•</span>
+            <span className="font-semibold">Бердичевська Оля</span>
+            <span className="text-white/50">•</span>
+            <span className="font-semibold">Шморгун Анна</span>
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

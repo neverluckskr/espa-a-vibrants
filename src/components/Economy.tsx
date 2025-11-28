@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import krizaImage from "@/assets/economy.jpg";
 
 const Economy = () => {
   return (
@@ -31,48 +32,59 @@ const Economy = () => {
               <h3 className="text-3xl font-display font-bold mb-6 text-spanish-red">
                 Економічна ситуація 1918-1923
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-xl font-bold mb-3">Проблеми:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Аграрна відсталість - латифундії займали величезні території
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Слабка індустріалізація, переважно в Каталонії та Країні Басків
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Високе безробіття та низькі заробітні плати
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Масова міграція селян до міст та еміграція
-                    </li>
-                  </ul>
+              <div className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <div>
+                    <h4 className="text-xl font-bold mb-3">Проблеми:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Аграрна відсталість - латифундії займали величезні території
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Слабка індустріалізація, переважно в Каталонії та Країні Басків
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Високе безробіття та низькі заробітні плати
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Масова міграція селян до міст та еміграція
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-3">Соціальні рухи:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Потужний анархо-синдикалістський рух (CNT)
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Зростання соціалістичної партії (PSOE) та профспілок
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Масові страйки та соціальні заворушення
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Конфлікти між робітниками та власниками
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-3">Соціальні рухи:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Потужний анархо-синдикалістський рух (CNT)
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Зростання соціалістичної партії (PSOE) та профспілок
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Масові страйки та соціальні заворушення
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Конфлікти між робітниками та власниками
-                    </li>
-                  </ul>
+                <div className="relative rounded-xl overflow-hidden shadow-spanish">
+                  <img
+                    src={krizaImage}
+                    alt="Економічна криза і страйки"
+                    className="w-full h-80 md:h-96 object-cover object-[50%_30%]"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/15 to-black/25" />
                 </div>
               </div>
             </Card>

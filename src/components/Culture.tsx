@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import spainHeroImage from "@/assets/losmejores.jpg";
 import picassoAvatar from "@/assets/picasso.jpg";
 import daliAvatar from "@/assets/dali.jpg";
 import miroAvatar from "@/assets/miro.jpg";
@@ -31,6 +32,15 @@ const Culture = () => {
             transition={{ duration: 0.6 }}
           >
             <Card className="p-8">
+              <div className="relative w-full h-[22rem] md:h-[26rem] rounded-xl overflow-hidden mb-6 shadow-spanish">
+                <img
+                  src={spainHeroImage}
+                  alt="Іспанська культура"
+                  className="w-full h-full object-cover object-[50%_32%]"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/15 to-black/25" />
+              </div>
               <h3 className="text-3xl font-display font-bold mb-6 text-spanish-red">
                 Література та поезія
               </h3>

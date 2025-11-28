@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import madridWarImage from "@/assets/battleship.jpg";
 
 const International = () => {
   return (
@@ -31,40 +32,52 @@ const International = () => {
               <h3 className="text-3xl font-display font-bold mb-6 text-spanish-red">
                 Нейтралітет у Першій світовій війні
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-xl font-bold mb-3">Переваги:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Економічне зростання завдяки торгівлі з обома сторонами
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Накопичення золотих резервів
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Розвиток промисловості через постачання воюючим
-                    </li>
-                  </ul>
+              <div className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <div>
+                    <h4 className="text-xl font-bold mb-3">Переваги:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Економічне зростання завдяки торгівлі з обома сторонами
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Накопичення золотих резервів
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Розвиток промисловості через постачання воюючим
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-3">Проблеми:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Інфляція та зростання цін
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Соціальна нерівність посилилася
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-spanish-red mr-2">•</span>
+                        Після війни - втрата ринків збуту
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-3">Проблеми:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Інфляція та зростання цін
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Соціальна нерівність посилилася
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-spanish-red mr-2">•</span>
-                      Після війни - втрата ринків збуту
-                    </li>
-                  </ul>
+
+                <div className="relative w-full rounded-xl overflow-hidden shadow-spanish bg-muted/40 h-[24rem] md:h-[28rem]">
+                  <img
+                    src={madridWarImage}
+                    alt="Іспанія у світовому контексті"
+                    className="w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/15 to-black/30" />
                 </div>
               </div>
             </Card>
