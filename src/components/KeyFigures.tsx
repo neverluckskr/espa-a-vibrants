@@ -4,27 +4,51 @@ import { Card } from "@/components/ui/card";
 const figures = [
   {
     name: "Альфонсо XIII",
-    role: "Король Испании",
+    role: "Король Іспанії",
     period: "1886-1931",
-    description: "Последний король до провозглашения республики"
+    description: "Останній король до проголошення республіки. Підтримав диктатуру Прімо де Рівери."
   },
   {
-    name: "Мигель Примо де Ривера",
+    name: "Мігель Прімо де Рівера",
     role: "Диктатор",
     period: "1923-1930",
-    description: "Военный диктатор с поддержкой монархии"
+    description: "Військовий диктатор за підтримки монархії. Провів модернізацію, але не вирішив структурних проблем."
   },
   {
-    name: "Мануэль Асанья",
-    role: "Президент республики",
+    name: "Нісето Алькала-Самора",
+    role: "Перший президент республіки",
+    period: "1931-1936",
+    description: "Помірний республіканець, перший президент Другої республіки."
+  },
+  {
+    name: "Мануель Асанья",
+    role: "Президент республіки",
     period: "1936-1939",
-    description: "Президент во время Гражданской войны"
+    description: "Інтелектуал і письменник, президент під час Громадянської війни."
   },
   {
-    name: "Франсиско Франко",
-    role: "Генерал",
+    name: "Франсіско Ларго Кабальєро",
+    role: "Лідер соціалістів",
+    period: "Прем'єр 1936-1937",
+    description: "Лідер соціалістів, очолював республіканський уряд на початку війни."
+  },
+  {
+    name: "Хуан Негрін",
+    role: "Прем'єр-міністр",
+    period: "1937-1939",
+    description: "Останній прем'єр республіканського уряду, організував опір франкістам."
+  },
+  {
+    name: "Франсіско Франко",
+    role: "Генерал, каудильо",
     period: "1936-1975",
-    description: "Лидер националистов и будущий диктатор"
+    description: "Лідер військового заколоту, переможець у війні. Диктатор Іспанії до 1975 року."
+  },
+  {
+    name: "Долорес Ібаррурі",
+    role: "Комуністична лідерка",
+    period: "Активна 1930-ті",
+    description: "\"Ла Пасіонарія\" - натхненний оратор республіканського руху. Відома гаслом \"¡No pasarán!\""
   }
 ];
 
@@ -40,10 +64,10 @@ const KeyFigures = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-display font-bold mb-4 text-gradient-spanish">
-            Ключевые фигуры
+            Ключові постаті
           </h2>
           <p className="text-xl text-muted-foreground">
-            Люди, определившие судьбу Испании
+            Люди, що визначили долю Іспанії
           </p>
         </motion.div>
 
@@ -54,7 +78,7 @@ const KeyFigures = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
             >
               <Card className="p-6 h-full hover:shadow-spanish transition-all duration-300 hover:-translate-y-2">
                 <div className="w-20 h-20 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mb-4 flex items-center justify-center shadow-spanish">
