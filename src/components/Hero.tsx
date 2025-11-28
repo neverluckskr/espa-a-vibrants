@@ -18,13 +18,13 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 text-white drop-shadow-lg">
-            Испания
+            Іспанія
           </h1>
           <div className="text-4xl md:text-6xl font-display font-bold mb-8 text-gradient-spanish">
             1918 — 1939
           </div>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Эпоха перемен: от монархии к республике, от надежды к гражданской войне
+            Епоха змін: від монархії до республіки, від надії до громадянської війни
           </p>
         </motion.div>
         
@@ -36,7 +36,7 @@ const Hero = () => {
         >
           <div className="inline-block bg-card/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-spanish">
             <p className="text-foreground font-medium">
-              Период между двумя мировыми войнами
+              Період між двома світовими війнами
             </p>
           </div>
         </motion.div>
