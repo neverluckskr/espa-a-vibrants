@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import mapImage from "@/assets/spain-map.jpg";
+import mapImage from "@/assets/madridwar.jpg";
 
 const CivilWar = () => {
   return (

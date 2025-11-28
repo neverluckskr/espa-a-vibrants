@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImage from "@/assets/spain-hero.jpg";
 
 const events = [
   {
@@ -70,8 +71,17 @@ const events = [
 
 const Timeline = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/30">
-      <div className="container mx-auto px-4">
+    <section className="relative py-24 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-16 dark:opacity-20 bg-pan"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/82" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,hsl(var(--spanish-gold)_/_0.12),transparent_38%),radial-gradient(circle_at_82%_12%,hsl(var(--spanish-red)_/_0.1),transparent_42%),radial-gradient(circle_at_50%_82%,hsl(var(--vintage-dark)_/_0.16),transparent_48%)]" />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,17 +105,17 @@ const Timeline = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
-              className="relative pl-8 md:pl-32 pb-12 border-l-2 border-spanish-red last:border-transparent"
+              className="relative pl-12 md:pl-48 pb-12 border-l-2 border-spanish-red last:border-transparent"
             >
               <div className="absolute left-0 -translate-x-1/2 w-4 h-4 rounded-full bg-spanish-red shadow-spanish" />
-              
-              <div className="md:absolute md:left-0 md:top-0 mb-2 md:mb-0">
-                <span className="inline-block bg-spanish-red text-white px-4 py-2 rounded-lg font-bold text-lg shadow-spanish">
+
+              <div className="md:absolute md:left-0 md:top-0 mb-2 md:mb-0 md:-translate-x-1">
+                <span className="inline-block bg-spanish-red text-white px-3 py-1.5 rounded-lg font-bold text-base shadow-spanish whitespace-nowrap tracking-tight">
                   {event.year}
                 </span>
               </div>
-              
-              <div className="bg-card p-6 rounded-xl shadow-soft hover:shadow-spanish transition-shadow duration-300">
+
+              <div className="bg-card/95 backdrop-blur-sm border border-border/60 p-6 rounded-xl shadow-soft hover:shadow-spanish transition-shadow duration-300">
                 <h3 className="text-2xl font-display font-bold mb-3 text-foreground">
                   {event.title}
                 </h3>
