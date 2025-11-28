@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 
-const figures = [
+type Figure = {
+  name: string;
+  role: string;
+  period: string;
+  description: string;
+  avatar?: string;
+};
+
+const figures: Figure[] = [
   {
     name: "Альфонсо XIII",
     role: "Король Іспанії",
@@ -81,11 +89,22 @@ const KeyFigures = () => {
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
               <Card className="p-6 h-full hover:shadow-spanish transition-all duration-300 hover:-translate-y-2">
-                <div className="w-20 h-20 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mb-4 flex items-center justify-center shadow-spanish">
-                  <span className="text-3xl font-display font-bold text-white">
-                    {figure.name.charAt(0)}
-                  </span>
-                </div>
+                {figure.avatar ? (
+                  <div className="w-20 h-20 rounded-full overflow-hidden mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
+                    <img
+                      src={figure.avatar}
+                      alt={figure.name}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mb-4 flex items-center justify-center shadow-spanish">
+                    <span className="text-3xl font-display font-bold text-white">
+                      {figure.name.charAt(0)}
+                    </span>
+                  </div>
+                )}
                 <h3 className="text-xl font-display font-bold mb-2 text-foreground">
                   {figure.name}
                 </h3>

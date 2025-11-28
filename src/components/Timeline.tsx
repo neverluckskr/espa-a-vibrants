@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/spain-hero.jpg";
 
 const events = [
   {
@@ -71,17 +70,8 @@ const events = [
 
 const Timeline = () => {
   return (
-    <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-16 dark:opacity-20 bg-pan"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/82" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,hsl(var(--spanish-gold)_/_0.12),transparent_38%),radial-gradient(circle_at_82%_12%,hsl(var(--spanish-red)_/_0.1),transparent_42%),radial-gradient(circle_at_50%_82%,hsl(var(--vintage-dark)_/_0.16),transparent_48%)]" />
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-24 bg-background">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
