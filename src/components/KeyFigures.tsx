@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import alfonsoAvatar from "@/assets/alfonso.jpg";
+import migeliAvatar from "@/assets/migeli.jpeg";
+import nisetoAvatar from "@/assets/niseto.jpg";
+import manuelAvatar from "@/assets/manuel.jpg";
+import franciscoAvatar from "@/assets/francisco.jpg";
+import juanAvatar from "@/assets/juan.jpg";
+import francoAvatar from "@/assets/franco.jpg";
+import doloresAvatar from "@/assets/dolores.jpg";
 
 type Figure = {
   name: string;
@@ -7,6 +15,7 @@ type Figure = {
   period: string;
   description: string;
   avatar?: string;
+  avatarClass?: string;
 };
 
 const figures: Figure[] = [
@@ -14,49 +23,64 @@ const figures: Figure[] = [
     name: "Альфонсо XIII",
     role: "Король Іспанії",
     period: "1886-1931",
-    description: "Останній король до проголошення республіки. Підтримав диктатуру Прімо де Рівери."
+    description: "Останній король до проголошення республіки. Підтримав диктатуру Прімо де Рівери.",
+    avatar: alfonsoAvatar
   },
   {
     name: "Мігель Прімо де Рівера",
     role: "Диктатор",
     period: "1923-1930",
-    description: "Військовий диктатор за підтримки монархії. Провів модернізацію, але не вирішив структурних проблем."
+    description: "Військовий диктатор за підтримки монархії. Провів модернізацію, але не вирішив структурних проблем.",
+    avatar: migeliAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_38%] scale-95"
   },
   {
     name: "Нісето Алькала-Самора",
     role: "Перший президент республіки",
     period: "1931-1936",
-    description: "Помірний республіканець, перший президент Другої республіки."
+    description: "Помірний республіканець, перший президент Другої республіки.",
+    avatar: nisetoAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_42%] scale-95"
   },
   {
     name: "Мануель Асанья",
     role: "Президент республіки",
     period: "1936-1939",
-    description: "Інтелектуал і письменник, президент під час Громадянської війни."
+    description: "Інтелектуал і письменник, президент під час Громадянської війни.",
+    avatar: manuelAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_40%] scale-95"
   },
   {
     name: "Франсіско Ларго Кабальєро",
     role: "Лідер соціалістів",
     period: "Прем'єр 1936-1937",
-    description: "Лідер соціалістів, очолював республіканський уряд на початку війни."
+    description: "Лідер соціалістів, очолював республіканський уряд на початку війни.",
+    avatar: franciscoAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_40%] scale-95"
   },
   {
     name: "Хуан Негрін",
     role: "Прем'єр-міністр",
     period: "1937-1939",
-    description: "Останній прем'єр республіканського уряду, організував опір франкістам."
+    description: "Останній прем'єр республіканського уряду, організував опір франкістам.",
+    avatar: juanAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_40%] scale-95"
   },
   {
     name: "Франсіско Франко",
     role: "Генерал, каудильо",
     period: "1936-1975",
-    description: "Лідер військового заколоту, переможець у війні. Диктатор Іспанії до 1975 року."
+    description: "Лідер військового заколоту, переможець у війні. Диктатор Іспанії до 1975 року.",
+    avatar: francoAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_48%] scale-95"
   },
   {
     name: "Долорес Ібаррурі",
     role: "Комуністична лідерка",
     period: "Активна 1930-ті",
-    description: "\"Ла Пасіонарія\" - натхненний оратор республіканського руху. Відома гаслом \"¡No pasarán!\""
+    description: "\"Ла Пасіонарія\" - натхненний оратор республіканського руху. Відома гаслом \"¡No pasarán!\"",
+    avatar: doloresAvatar,
+    avatarClass: "w-full h-full object-cover object-[50%_42%] scale-95"
   }
 ];
 
@@ -94,7 +118,7 @@ const KeyFigures = () => {
                     <img
                       src={figure.avatar}
                       alt={figure.name}
-                      className="w-full h-full object-cover"
+                      className={figure.avatarClass ?? "w-full h-full object-cover object-[50%_32%] scale-95"}
                       loading="lazy"
                     />
                   </div>

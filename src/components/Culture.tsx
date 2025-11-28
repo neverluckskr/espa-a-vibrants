@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import picassoAvatar from "@/assets/picasso.jpg";
+import daliAvatar from "@/assets/dali.jpg";
+import miroAvatar from "@/assets/miro.jpg";
 
 const Culture = () => {
   return (
@@ -93,8 +96,13 @@ const Culture = () => {
               </h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mx-auto mb-4 flex items-center justify-center shadow-spanish">
-                    <span className="text-4xl font-display font-bold text-white">P</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
+                    <img
+                      src={picassoAvatar}
+                      alt="Пабло Пікассо"
+                      className="w-full h-full object-cover object-[50%_40%]"
+                      loading="lazy"
+                    />
                   </div>
                   <h4 className="font-bold text-xl mb-2">Пабло Пікассо</h4>
                   <p className="text-sm text-muted-foreground">
@@ -103,8 +111,13 @@ const Culture = () => {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mx-auto mb-4 flex items-center justify-center shadow-spanish">
-                    <span className="text-4xl font-display font-bold text-white">D</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
+                    <img
+                      src={daliAvatar}
+                      alt="Сальвадор Далі"
+                      className="w-full h-full object-cover object-[50%_42%]"
+                      loading="lazy"
+                    />
                   </div>
                   <h4 className="font-bold text-xl mb-2">Сальвадор Далі</h4>
                   <p className="text-sm text-muted-foreground">
@@ -112,8 +125,13 @@ const Culture = () => {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-spanish-red to-spanish-gold rounded-full mx-auto mb-4 flex items-center justify-center shadow-spanish">
-                    <span className="text-4xl font-display font-bold text-white">M</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
+                    <img
+                      src={miroAvatar}
+                      alt="Хоан Міро"
+                      className="w-full h-full object-cover object-[50%_36%]"
+                      loading="lazy"
+                    />
                   </div>
                   <h4 className="font-bold text-xl mb-2">Хоан Міро</h4>
                   <p className="text-sm text-muted-foreground">
