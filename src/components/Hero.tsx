@@ -44,7 +44,11 @@ const Hero = () => {
             <span className="text-white/50">•</span>
             <span className="font-semibold">Шморгун Анна</span>
             <span className="text-white/50">•</span>
+<<<<<<< HEAD
             <span className="font-semibold">Шпак Нелі</span>
+=======
+            <span className="font-semibold">Шпак Нелi</span>
+>>>>>>> d9610851954864bd8de5bcc2347cdb7c21ca850d
           </div>
         </motion.div>
 
