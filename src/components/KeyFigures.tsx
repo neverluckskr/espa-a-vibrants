@@ -80,7 +80,7 @@ const KeyFigures = () => {
   return (
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 relative">
-        <div className="absolute inset-x-0 -top-6 md:-top-8 flex justify-center">
+        <div className="absolute inset-x-0 -top-10 md:-top-12 flex justify-center">
           <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               В
