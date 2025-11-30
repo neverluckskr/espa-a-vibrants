@@ -19,11 +19,13 @@ const Index = () => {
       
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 relative">
-          <div className="absolute right-0 -top-4 md:-top-6 flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
-            <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
-              О
-            </span>
-            <span>Оля · Епохи</span>
+          <div className="absolute inset-x-0 -top-6 md:-top-8 flex justify-center">
+            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
+              <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
+                О
+              </span>
+              <span>Оля · Епохи</span>
+            </div>
           </div>
           <EraCard
             title="Криза монархії"
@@ -60,11 +62,13 @@ const Index = () => {
       
       <section className="py-24 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4 relative">
-          <div className="absolute right-0 -top-4 md:-top-6 flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
-            <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
-              В
-            </span>
-            <span>Влад · Спадщина епохи</span>
+          <div className="absolute inset-x-0 -top-6 md:-top-8 flex justify-center">
+            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
+              <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
+                В
+              </span>
+              <span>Влад · Спадщина епохи</span>
+            </div>
           </div>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-display font-bold mb-8 text-center text-gradient-spanish">
