@@ -8,7 +8,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-[#1c1510]" />
       </div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -43,6 +43,8 @@ const Hero = () => {
             <span className="font-semibold">Бердичевська Оля</span>
             <span className="text-white/50">•</span>
             <span className="font-semibold">Шморгун Анна</span>
+            <span className="text-white/50">•</span>
+            <span className="font-semibold">Шпак Нелі</span>
           </div>
         </motion.div>
 
@@ -52,18 +54,16 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="mt-12"
         >
-          <div className="inline-block bg-card/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-spanish">
-            <p className="text-foreground font-medium">
-              Період між двома світовими війнами
-            </p>
-          </div>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="text-white/60"
+          >
+            <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </motion.div>
         </motion.div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-white/50 rounded-full" />
-        </div>
       </div>
     </section>
   );

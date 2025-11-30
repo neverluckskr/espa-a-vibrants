@@ -11,8 +11,6 @@ interface EraCardProps {
 }
 
 const EraCard = ({ title, period, description, image, reverse = false, presenter }: EraCardProps) => {
-  const presenterInitial = presenter ? presenter.trim().charAt(0).toUpperCase() : null;
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -32,8 +30,18 @@ const EraCard = ({ title, period, description, image, reverse = false, presenter
       </div>
       
       <div className="w-full md:w-1/2">
-        <div className="inline-block bg-secondary/20 text-spanish-red px-4 py-2 rounded-lg font-bold mb-4">
-          {period}
+        <div className="flex flex-wrap items-center gap-3 mb-4">
+          <div className="inline-block px-4 py-2 rounded-lg font-bold bg-[#2a1f18]/70 text-spanish-red border border-amber-900/30 backdrop-blur-sm">
+            {period}
+          </div>
+          {presenter && (
+            <div className="relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#302419]/80 backdrop-blur-sm border border-amber-900/30 shadow-soft text-sm font-medium text-amber-100/90">
+              <span className="w-2 h-2 rounded-full bg-spanish-red shadow-spanish/40" />
+              <span className="text-foreground/90">
+                {presenter}
+              </span>
+            </div>
+          )}
         </div>
         <h3 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gradient-spanish">
           {title}

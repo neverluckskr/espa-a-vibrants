@@ -4,10 +4,10 @@ import krizaImage from "@/assets/economy.jpg";
 
 const Economy = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-muted/30 to-background">
+    <section className="py-24 bg-gradient-to-b from-[#35281c] via-[#3a2c1e] to-[#3f3020]">
       <div className="container mx-auto px-4 relative">
         <div className="absolute inset-x-0 -top-14 md:-top-16 flex justify-center">
-          <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
+          <div className="flex items-center gap-2 bg-[#3a2c1e]/80 backdrop-blur-sm border border-amber-900/30 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-amber-100/90">
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               В
             </span>
@@ -24,7 +24,7 @@ const Economy = () => {
           <h2 className="text-5xl md:text-6xl font-display font-bold mb-4 text-gradient-spanish">
             Економіка та суспільство
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-amber-200/70">
             Соціально-економічні трансформації періоду
           </p>
         </motion.div>
@@ -36,15 +36,15 @@ const Economy = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="p-8">
+            <Card className="p-8 bg-[#2a2118]/80 border-amber-900/30">
               <h3 className="text-3xl font-display font-bold mb-6 text-spanish-red">
                 Економічна ситуація 1918-1923
               </h3>
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
-                    <h4 className="text-xl font-bold mb-3">Проблеми:</h4>
-                    <ul className="space-y-2 text-muted-foreground">
+                    <h4 className="text-xl font-bold mb-3 text-amber-100">Проблеми:</h4>
+                    <ul className="space-y-2 text-amber-200/70">
                       <li className="flex items-start">
                         <span className="text-spanish-red mr-2">•</span>
                         Аграрна відсталість - латифундії займали величезні території
@@ -64,8 +64,8 @@ const Economy = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-3">Соціальні рухи:</h4>
-                    <ul className="space-y-2 text-muted-foreground">
+                    <h4 className="text-xl font-bold mb-3 text-amber-100">Соціальні рухи:</h4>
+                    <ul className="space-y-2 text-amber-200/70">
                       <li className="flex items-start">
                         <span className="text-spanish-red mr-2">•</span>
                         Потужний анархо-синдикалістський рух (CNT)
@@ -104,14 +104,14 @@ const Economy = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <Card className="p-8">
+            <Card className="p-8 bg-[#2a2118]/80 border-amber-900/30">
               <h3 className="text-3xl font-display font-bold mb-6 text-spanish-red">
                 Період диктатури (1923-1930)
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-xl font-bold mb-3">Економічні досягнення:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <h4 className="text-xl font-bold mb-3 text-amber-100">Економічні досягнення:</h4>
+                  <ul className="space-y-2 text-amber-200/70">
                     <li className="flex items-start">
                       <span className="text-spanish-red mr-2">•</span>
                       Будівництво інфраструктури: дороги, залізниці, гідроелектростанції
@@ -131,8 +131,8 @@ const Economy = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-3">Невирішені проблеми:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <h4 className="text-xl font-bold mb-3 text-amber-100">Невирішені проблеми:</h4>
+                  <ul className="space-y-2 text-amber-200/70">
                     <li className="flex items-start">
                       <span className="text-spanish-red mr-2">•</span>
                       Аграрна реформа не проведена
@@ -161,35 +161,35 @@ const Economy = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Card className="p-8 bg-gradient-to-br from-card to-muted/30">
+            <Card className="p-8 bg-gradient-to-br from-[#2a2118]/90 to-[#35281c]/80 border-amber-900/30">
               <h3 className="text-3xl font-display font-bold mb-6 text-spanish-red">
                 Реформи Другої Республіки
               </h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-spanish-red pl-4">
-                  <h4 className="text-xl font-bold mb-2">Аграрна реформа (1932)</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="text-xl font-bold mb-2 text-amber-100">Аграрна реформа (1932)</h4>
+                  <p className="text-amber-200/70">
                     Експропріація великих латифундій та розподіл землі серед безземельних селян. 
                     Реформа проводилася повільно через опір землевласників.
                   </p>
                 </div>
                 <div className="border-l-4 border-spanish-red pl-4">
-                  <h4 className="text-xl font-bold mb-2">Трудове законодавство</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="text-xl font-bold mb-2 text-amber-100">Трудове законодавство</h4>
+                  <p className="text-amber-200/70">
                     8-годинний робочий день, право на страйк, соціальне страхування, 
                     охорона материнства та дитинства.
                   </p>
                 </div>
                 <div className="border-l-4 border-spanish-red pl-4">
-                  <h4 className="text-xl font-bold mb-2">Освітня реформа</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="text-xl font-bold mb-2 text-amber-100">Освітня реформа</h4>
+                  <p className="text-amber-200/70">
                     Будівництво тисяч нових шкіл, підвищення зарплат вчителям, 
                     секуляризація освіти, розширення доступу до університетів.
                   </p>
                 </div>
                 <div className="border-l-4 border-spanish-red pl-4">
-                  <h4 className="text-xl font-bold mb-2">Права жінок</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="text-xl font-bold mb-2 text-amber-100">Права жінок</h4>
+                  <p className="text-amber-200/70">
                     Виборче право для жінок (1931), рівність перед законом, 
                     право на розлучення, доступ до професій.
                   </p>

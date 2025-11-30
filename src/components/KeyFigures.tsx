@@ -78,10 +78,10 @@ const figures: Figure[] = [
 
 const KeyFigures = () => {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-24 bg-gradient-to-b from-[#2a1f18] via-[#302419] to-[#35281c]">
       <div className="container mx-auto px-4 relative">
         <div className="absolute inset-x-0 -top-14 md:-top-16 flex justify-center">
-          <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
+          <div className="flex items-center gap-2 bg-[#35281c]/80 backdrop-blur-sm border border-amber-900/30 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-amber-100/90">
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               В
             </span>
@@ -98,7 +98,7 @@ const KeyFigures = () => {
           <h2 className="text-5xl md:text-6xl font-display font-bold mb-4 text-gradient-spanish">
             Ключові постаті
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-amber-200/70">
             Люди, що визначили долю Іспанії
           </p>
         </motion.div>
@@ -112,7 +112,7 @@ const KeyFigures = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
-              <Card className="p-6 h-full hover:shadow-spanish transition-all duration-300 hover:-translate-y-2">
+              <Card className="p-6 h-full hover:shadow-spanish transition-all duration-300 hover:-translate-y-2 bg-[#2a2118]/80 border-amber-900/30">
                 {figure.avatar ? (
                   <div className="w-24 h-24 rounded-full overflow-hidden mb-4 shadow-spanish ring-2 ring-spanish-gold/70">
                     <img
@@ -129,16 +129,16 @@ const KeyFigures = () => {
                     </span>
                   </div>
                 )}
-                <h3 className="text-xl font-display font-bold mb-2 text-foreground">
+                <h3 className="text-xl font-display font-bold mb-2 text-amber-100">
                   {figure.name}
                 </h3>
                 <div className="text-sm text-spanish-red font-semibold mb-2">
                   {figure.role}
                 </div>
-                <div className="text-xs text-muted-foreground mb-3 font-mono">
+                <div className="text-xs text-amber-200/60 mb-3 font-mono">
                   {figure.period}
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-amber-200/70 leading-relaxed">
                   {figure.description}
                 </p>
               </Card>
