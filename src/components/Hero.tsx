@@ -43,6 +43,8 @@ const Hero = () => {
             <span className="font-semibold">Бердичевська Оля</span>
             <span className="text-white/50">•</span>
             <span className="font-semibold">Шморгун Анна</span>
+            <span className="text-white/50">•</span>
+            <span className="font-semibold">Шпак Нелi</span>
           </div>
         </motion.div>
 
