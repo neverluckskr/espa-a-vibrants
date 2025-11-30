@@ -7,9 +7,12 @@ interface EraCardProps {
   description: string;
   image: string;
   reverse?: boolean;
+  presenter?: string;
 }
 
-const EraCard = ({ title, period, description, image, reverse = false }: EraCardProps) => {
+const EraCard = ({ title, period, description, image, reverse = false, presenter }: EraCardProps) => {
+  const presenterInitial = presenter ? presenter.trim().charAt(0).toUpperCase() : null;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -19,7 +22,7 @@ const EraCard = ({ title, period, description, image, reverse = false }: EraCard
       className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 items-center mb-20`}
     >
       <div className="w-full md:w-1/2">
-        <Card className="overflow-hidden shadow-spanish hover:shadow-spanish/50 transition-shadow duration-300">
+        <Card className="relative overflow-hidden shadow-spanish hover:shadow-spanish/50 transition-shadow duration-300">
           <img 
             src={image} 
             alt={title}

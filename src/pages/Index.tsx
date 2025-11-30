@@ -18,12 +18,19 @@ const Index = () => {
       <Timeline />
       
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative">
+          <div className="absolute right-0 -top-4 md:-top-6 flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
+            <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
+              О
+            </span>
+            <span>Оля · Епохи</span>
+          </div>
           <EraCard
             title="Криза монархії"
             period="1918-1923"
             description="Після Першої світової війни Іспанія зіткнулася з серйозними соціальними та економічними проблемами. Зростання анархістського та соціалістичного рухів, колоніальні війни в Марокко та політична нестабільність підривали авторитет монархії Альфонсо XIII. Страйки, терористичні акти та соціальні заворушення стали повсякденністю. Військова катастрофа при Ануалі (1921) остаточно дискредитувала систему."
             image={protestImage}
+            presenter="Оля · Криза монархії"
           />
           
           <EraCard
@@ -32,6 +39,7 @@ const Index = () => {
             description="Генерал Мігель Прімо де Рівера встановив військову диктатуру за підтримки короля. Режим спочатку досяг певних успіхів: завершення Марокканської війни, будівництво інфраструктури, промислове зростання. Однак він не вирішив структурних проблем країни - земельного питання, регіонального сепаратизму, соціальної нерівності. Економічна криза 1929 року призвела до падіння диктатури (1930) і втечі короля (1931)."
             image={republicImage}
             reverse
+            presenter="Оля · Диктатура"
           />
           
           <EraCard
@@ -39,6 +47,7 @@ const Index = () => {
             period="1931-1936"
             description="Проголошення республіки принесло надії на демократичні реформи. Були проведені аграрна реформа, секуляризація освіти, надані права жінкам, впроваджене трудове законодавство. Конституція 1931 року була однією з найпрогресивніших в Європі. Однак поляризація суспільства між лівими та правими силами тільки посилювалася. 'Чорне двохріччя' (1933-1936) призвело до згортання реформ. Перемога Народного фронту в 1936 році спровокувала військовий заколот."
             image={robinsonImage}
+            presenter="Оля · Друга республіка"
           />
         </div>
       </section>
@@ -50,7 +59,13 @@ const Index = () => {
       <CivilWar />
       
       <section className="py-24 bg-gradient-to-b from-muted/50 to-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative">
+          <div className="absolute right-0 -top-4 md:-top-6 flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/60 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-foreground/90">
+            <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
+              В
+            </span>
+            <span>Влад · Спадщина епохи</span>
+          </div>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-display font-bold mb-8 text-center text-gradient-spanish">
               Спадщина епохи

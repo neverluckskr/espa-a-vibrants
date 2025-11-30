@@ -108,11 +108,15 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body select-none;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
+  }
+
+  input, textarea, button, select {
+    @apply select-text;
   }
 }
 
