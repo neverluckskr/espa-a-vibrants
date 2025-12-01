@@ -85,7 +85,7 @@ const KeyFigures = () => {
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               В
             </span>
-            <span>Вероніка · Ключові постаті</span>
+            <span>Оля та Нелі · Ключові постаті</span>
           </div>
         </div>
         <motion.div
