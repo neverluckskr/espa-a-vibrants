@@ -14,7 +14,7 @@ const Culture = () => {
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               А
             </span>
-            <span>Анна · Культура</span>
+            <span>Анна та Вероніка · Культура</span>
           </div>
         </div>
         <motion.div
