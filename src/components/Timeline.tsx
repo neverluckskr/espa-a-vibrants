@@ -78,7 +78,7 @@ const Timeline = () => {
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               А
             </span>
-            <span>Аня та Оля · Хронологія</span>
+            <span>Аня · Хронологія</span>
           </div>
         </div>
 
