@@ -11,7 +11,7 @@ const International = () => {
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               В
             </span>
-            <span>Влад та Вероніка · Міжнародний контекст</span>
+            <span>Влад та Ніка · Міжнародний контекст</span>
           </div>
         </div>
         <motion.div
@@ -121,6 +121,22 @@ const International = () => {
                 </div>
               </div>
             </Card>
+          </motion.div>
+
+          {/* Бейджик "Далі Ніка" */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="relative flex justify-center my-12"
+          >
+            <div className="inline-flex items-center gap-2 bg-[#2a2118]/90 backdrop-blur-sm border border-amber-900/40 px-4 py-2 rounded-full shadow-spanish text-sm font-semibold text-amber-100">
+              <span className="w-8 h-8 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold">
+                Н
+              </span>
+              <span>Далі Ніка</span>
+            </div>
           </motion.div>
 
           <motion.div

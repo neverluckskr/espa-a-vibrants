@@ -76,9 +76,9 @@ const Timeline = () => {
         <div className="absolute inset-x-0 -top-14 md:-top-16 flex justify-center">
           <div className="flex items-center gap-2 bg-[#2a2118]/80 backdrop-blur-sm border border-amber-900/30 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-amber-100/90">
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
-              А
+              О
             </span>
-            <span>Аня · Хронологія</span>
+            <span>Оля та Аня · Хронологія</span>
           </div>
         </div>
 
@@ -98,7 +98,53 @@ const Timeline = () => {
         </motion.div>
 
         <div className="max-w-5xl mx-auto">
-          {events.map((event, index) => (
+          {events.slice(0, 7).map((event, index) => (
+            <motion.div
+              key={event.year}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
+              className="relative pl-12 md:pl-48 pb-12 border-l-2 border-spanish-red"
+            >
+              <div className="absolute left-0 -translate-x-1/2 w-4 h-4 rounded-full bg-spanish-red shadow-spanish" />
+
+              <div className="md:absolute md:left-0 md:top-0 mb-2 md:mb-0 md:-translate-x-1">
+                <span className="inline-block bg-spanish-red text-white px-3 py-1.5 rounded-lg font-bold text-base shadow-spanish whitespace-nowrap tracking-tight">
+                  {event.year}
+                </span>
+              </div>
+
+              <div className="bg-[#2a2118]/80 backdrop-blur-sm border border-amber-900/30 p-6 rounded-xl shadow-soft hover:shadow-spanish transition-shadow duration-300">
+                <h3 className="text-2xl font-display font-bold mb-3 text-amber-100">
+                  {event.title}
+                </h3>
+                <p className="text-amber-200/70 leading-relaxed">
+                  {event.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+
+          {/* Разделитель "Далі Аня" */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="relative pl-12 md:pl-48 pb-12 border-l-2 border-spanish-red"
+          >
+            <div className="absolute left-0 -translate-x-1/2 w-5 h-5 rounded-full bg-amber-500 shadow-lg shadow-amber-500/50 animate-pulse" />
+            
+            <div className="flex items-center gap-2 bg-[#2a2118]/90 backdrop-blur-sm border border-amber-500/50 px-4 py-2 rounded-full shadow-lg inline-flex">
+              <span className="w-6 h-6 rounded-full bg-amber-500 text-[#1c1510] flex items-center justify-center font-bold text-xs">
+                А
+              </span>
+              <span className="text-sm font-semibold text-amber-100">Далі Аня</span>
+            </div>
+          </motion.div>
+
+          {events.slice(7).map((event, index) => (
             <motion.div
               key={event.year}
               initial={{ opacity: 0, x: -50 }}
