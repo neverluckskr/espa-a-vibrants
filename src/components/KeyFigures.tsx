@@ -83,7 +83,7 @@ const KeyFigures = () => {
         <div className="absolute inset-x-0 -top-14 md:-top-16 flex justify-center">
           <div className="flex items-center gap-2 bg-[#35281c]/80 backdrop-blur-sm border border-amber-900/30 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-amber-100/90">
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
-              В
+              О
             </span>
             <span>Оля та Нелі · Ключові постаті</span>
           </div>
