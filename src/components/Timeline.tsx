@@ -72,14 +72,16 @@ const Timeline = () => {
   return (
     <section className="py-24 bg-gradient-to-b from-[#1c1510] via-[#231a14] to-[#2a1f18]">
       <div className="container mx-auto px-4 relative">
+
         <div className="absolute inset-x-0 -top-14 md:-top-16 flex justify-center">
-  <div className="flex items-center gap-2 bg-[#2a2118]/80 backdrop-blur-sm border border-amber-900/30 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-amber-100/90">
-    <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
-      А • О
-    </span>
-    <span>Аня · Оля · Хронологія</span>
-  </div>
-</div>
+          <div className="flex items-center gap-2 bg-[#2a2118]/80 backdrop-blur-sm border border-amber-900/30 px-3 py-1.5 rounded-full shadow-soft text-xs font-semibold text-amber-100/90">
+            <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
+              А • О
+            </span>
+            <span>Аня · Оля · Хронологія</span>
+          </div>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -124,6 +126,7 @@ const Timeline = () => {
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
