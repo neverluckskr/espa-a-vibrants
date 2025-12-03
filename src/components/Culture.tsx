@@ -14,7 +14,7 @@ const Culture = () => {
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               О
             </span>
-            <span>Оля та Нелі · Культура і мистецтво</span>
+            <span>Оля та Аня · Культура і мистецтво</span>
           </div>
         </div>
         <motion.div
@@ -170,9 +170,9 @@ const Culture = () => {
           >
             <div className="inline-flex items-center gap-2 bg-[#2a2118]/90 backdrop-blur-sm border border-amber-900/40 px-4 py-2 rounded-full shadow-spanish text-sm font-semibold text-amber-100">
               <span className="w-8 h-8 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold">
-                Н
+                А
               </span>
-              <span>Далі Нелі</span>
+              <span>Далі Аня</span>
             </div>
           </motion.div>
 
