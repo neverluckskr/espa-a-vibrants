@@ -78,7 +78,7 @@ const Timeline = () => {
             <span className="w-7 h-7 rounded-full bg-spanish-red text-white flex items-center justify-center font-bold text-sm">
               О
             </span>
-            <span>Оля та Влад · Хронологія</span>
+            <span>Оля та Аня · Хронологія</span>
           </div>
         </div>
 
@@ -138,9 +138,9 @@ const Timeline = () => {
             
             <div className="flex items-center gap-2 bg-[#2a2118]/90 backdrop-blur-sm border border-amber-500/50 px-4 py-2 rounded-full shadow-lg inline-flex">
               <span className="w-6 h-6 rounded-full bg-amber-500 text-[#1c1510] flex items-center justify-center font-bold text-xs">
-                В
+                А
               </span>
-              <span className="text-sm font-semibold text-amber-100">Далі Влад</span>
+              <span className="text-sm font-semibold text-amber-100">Далі Аня</span>
             </div>
           </motion.div>
 
